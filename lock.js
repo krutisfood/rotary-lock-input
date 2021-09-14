@@ -85,6 +85,7 @@ function polar(e) {
   const y = clientY - rect.y - rect.height / 2;
   const r = (Math.hypot(x, y) / rect.width) * 200;
   const t = (Math.atan2(y, x) * 180) / Math.PI;
+  sfx.click();
 
   return { r, t };
 }
